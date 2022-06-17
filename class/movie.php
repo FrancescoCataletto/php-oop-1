@@ -39,4 +39,6 @@ $titanicMovie = new Movie("Titanic", "Dramatic", 4.5);
 $lotrMovie = new Movie("Lord Of The Rings: first chapter", "Fantasy", 4.5);
 $starwarsMovie = new Movie("Star Wars", "Fantasy", 4);
 $supermanMovie = new Movie("Superman", "Action", 3.5);
+
+$movies = array($batmanMovie, $spidermanMovie, $titanicMovie, $lotrMovie, $starwarsMovie, $supermanMovie);
 ?>

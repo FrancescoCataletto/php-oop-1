@@ -15,42 +15,13 @@ require_once __DIR__ . "/class/movie.php";
     <title>php-oop-1</title>
 </head>
 <body>
+    <?php foreach($movies as $movie): ?>
     <div>
         <h2>FILM</h2>
-        <p><h3>Title:</h3><?php echo $batmanMovie->getName() ?></p>
-        <p><h3>Genre:</h3><?php echo $batmanMovie->getGenre() ?></p>
-        <p><h3>Rating:</h3><?php echo $batmanMovie->getRating() ?></p>
+        <p><h3>Title:</h3><?php echo $movie->getName() ?></p>
+        <p><h3>Genre:</h3><?php echo $movie->getGenre() ?></p>
+        <p><h3>Rating:</h3><?php echo $movie->getRating() ?></p>
     </div>
-    <div>
-        <h2>FILM</h2>
-        <p><h3>Title:</h3><?php echo $spidermanMovie->getName() ?></p>
-        <p><h3>Genre:</h3><?php echo $spidermanMovie->getGenre() ?></p>
-        <p><h3>Rating:</h3><?php echo $spidermanMovie->getRating() ?></p>
-    </div>
-    <div>
-        <h2>FILM</h2>
-        <p><h3>Title:</h3><?php echo $titanicMovie->getName() ?></p>
-        <p><h3>Genre:</h3><?php echo $titanicMovie->getGenre() ?></p>
-        <p><h3>Rating:</h3><?php echo $titanicMovie->getRating() ?></p>
-    </div>
-    <div>
-        <h2>FILM</h2>
-        <p><h3>Title:</h3><?php echo $lotrMovie->getName() ?></p>
-        <p><h3>Genre:</h3><?php echo $lotrMovie->getGenre() ?></p>
-        <p><h3>Rating:</h3><?php echo $lotrMovie->getRating() ?></p>
-    </div>
-    <div>
-        <h2>FILM</h2>
-        <p><h3>Title:</h3><?php echo $starwarsMovie->getName() ?></p>
-        <p><h3>Genre:</h3><?php echo $starwarsMovie->getGenre() ?></p>
-        <p><h3>Rating:</h3><?php echo $starwarsMovie->getRating() ?></p>
-    </div>
-    <div>
-        <h2>FILM</h2>
-        <p><h3>Title:</h3><?php echo $supermanMovie->getName() ?></p>
-        <p><h3>Genre:</h3><?php echo $supermanMovie->getGenre() ?></p>
-        <p><h3>Rating:</h3><?php echo $supermanMovie->getRating() ?></p>
-    </div>
-    
+    <?php endforeach?>
 </body>
 </html>
