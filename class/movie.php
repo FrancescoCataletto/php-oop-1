@@ -9,30 +9,27 @@ class Movie {
         $this->name = $_name;
         $this->genre = $_genre;
         $this->rating = $_rating;
+
+        $this->setRating();
     }
 
     // SETTER
-    public function setName($_name){
-        $this->name = $_name;
-    }
-    public function setGenre($_genre){
-        $this->genre = $_genre;
-    }
-    public function setRating($_rating){
-        $this->rating = $_rating;
+    public function setRating(){
+        if ($this->rating >= 4.5){
+            $this->rating = "Top 100 best film";
+        }
     }
 
     // GETTER
-    public function getMovie(){
-        return $this->name . ' ' . $this->genre . ' ' . $this->rating;
-    }
+    
+
 }
 
 
-$batmanMovie = new Movie("Batman", "Action", "4");
-$spidermanMovie = new Movie("Spider-Man", "Action", "4.5");
-$titanicMovie = new Movie("Titanic", "Dramatic", "4.5");
-$lotrMovie = new Movie("Lord Of The Rings: first chapter", "Fantasy", "4.5");
-$starwarsMovie = new Movie("Star Wars", "Fantasy", "4");
-$supermanMovie = new Movie("Superman", "Action", "3.5");
+$batmanMovie = new Movie("Batman", "Action", 4);
+$spidermanMovie = new Movie("Spider-Man", "Action", 4.5);
+$titanicMovie = new Movie("Titanic", "Dramatic", 4.5);
+$lotrMovie = new Movie("Lord Of The Rings: first chapter", "Fantasy", 4.5);
+$starwarsMovie = new Movie("Star Wars", "Fantasy", 4);
+$supermanMovie = new Movie("Superman", "Action", 3.5);
 ?>
