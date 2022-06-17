@@ -17,39 +17,39 @@ require_once __DIR__ . "/class/movie.php";
 <body>
     <div>
         <h2>FILM</h2>
-        <p><h3>Title:</h3><?php echo $batmanMovie->name ?></p>
-        <p><h3>Genre:</h3><?php echo $batmanMovie->genre ?></p>
-        <p><h3>Rating:</h3><?php echo $batmanMovie->rating ?></p>
+        <p><h3>Title:</h3><?php echo $batmanMovie->getName() ?></p>
+        <p><h3>Genre:</h3><?php echo $batmanMovie->getGenre() ?></p>
+        <p><h3>Rating:</h3><?php echo $batmanMovie->getRating() ?></p>
     </div>
     <div>
         <h2>FILM</h2>
-        <p><h3>Title:</h3><?php echo $spidermanMovie->name ?></p>
-        <p><h3>Genre:</h3><?php echo $spidermanMovie->genre ?></p>
-        <p><h3>Rating:</h3><?php echo $spidermanMovie->rating ?></p>
+        <p><h3>Title:</h3><?php echo $spidermanMovie->getName() ?></p>
+        <p><h3>Genre:</h3><?php echo $spidermanMovie->getGenre() ?></p>
+        <p><h3>Rating:</h3><?php echo $spidermanMovie->getRating() ?></p>
     </div>
     <div>
         <h2>FILM</h2>
-        <p><h3>Title:</h3><?php echo $titanicMovie->name ?></p>
-        <p><h3>Genre:</h3><?php echo $titanicMovie->genre ?></p>
-        <p><h3>Rating:</h3><?php echo $titanicMovie->rating ?></p>
+        <p><h3>Title:</h3><?php echo $titanicMovie->getName() ?></p>
+        <p><h3>Genre:</h3><?php echo $titanicMovie->getGenre() ?></p>
+        <p><h3>Rating:</h3><?php echo $titanicMovie->getRating() ?></p>
     </div>
     <div>
         <h2>FILM</h2>
-        <p><h3>Title:</h3><?php echo $lotrMovie->name ?></p>
-        <p><h3>Genre:</h3><?php echo $lotrMovie->genre ?></p>
-        <p><h3>Rating:</h3><?php echo $lotrMovie->rating ?></p>
+        <p><h3>Title:</h3><?php echo $lotrMovie->getName() ?></p>
+        <p><h3>Genre:</h3><?php echo $lotrMovie->getGenre() ?></p>
+        <p><h3>Rating:</h3><?php echo $lotrMovie->getRating() ?></p>
     </div>
     <div>
         <h2>FILM</h2>
-        <p><h3>Title:</h3><?php echo $starwarsMovie->name ?></p>
-        <p><h3>Genre:</h3><?php echo $starwarsMovie->genre ?></p>
-        <p><h3>Rating:</h3><?php echo $starwarsMovie->rating ?></p>
+        <p><h3>Title:</h3><?php echo $starwarsMovie->getName() ?></p>
+        <p><h3>Genre:</h3><?php echo $starwarsMovie->getGenre() ?></p>
+        <p><h3>Rating:</h3><?php echo $starwarsMovie->getRating() ?></p>
     </div>
     <div>
         <h2>FILM</h2>
-        <p><h3>Title:</h3><?php echo $supermanMovie->name ?></p>
-        <p><h3>Genre:</h3><?php echo $supermanMovie->genre ?></p>
-        <p><h3>Rating:</h3><?php echo $supermanMovie->rating ?></p>
+        <p><h3>Title:</h3><?php echo $supermanMovie->getName() ?></p>
+        <p><h3>Genre:</h3><?php echo $supermanMovie->getGenre() ?></p>
+        <p><h3>Rating:</h3><?php echo $supermanMovie->getRating() ?></p>
     </div>
     
 </body>

@@ -1,9 +1,9 @@
 <?php
 
 class Movie {
-    public $name;
-    public $genre;
-    public $rating;
+    private $name;
+    private $genre;
+    private $rating;
 
     public function __construct($_name, $_genre, $_rating){
         $this->name = $_name;
@@ -21,8 +21,15 @@ class Movie {
     }
 
     // GETTER
-    
-
+    public function getName(){
+        return $this->name;
+    }
+    public function getGenre(){
+        return $this->genre;
+    }
+    public function getRating(){
+        return $this->rating;
+    }
 }
 
 
